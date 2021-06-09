@@ -1,0 +1,1 @@
+Cơ bản là thế. mấy cái tương tác giữa các màn là t cài tạm vào chứ mấy cái đấy sau này sẽ làm trên client vs server cơ

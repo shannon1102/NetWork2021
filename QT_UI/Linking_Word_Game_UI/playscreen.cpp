@@ -26,6 +26,8 @@ PlayScreen::PlayScreen(QWidget *parent) :
         ui->listWidget->insertItem(i,player[i]);
        }
     player[1]->setBackgroundColor(Qt::green);
+
+//    ui->plainTextEdit->insertItem("Aloooooo");
 }
 
 PlayScreen::~PlayScreen()

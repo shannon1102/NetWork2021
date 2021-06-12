@@ -19,7 +19,6 @@ HomeScreen::~HomeScreen()
 
 
 
-
 void HomeScreen::on_pushButton_clicked()
 {
     room room1;

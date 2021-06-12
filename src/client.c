@@ -84,7 +84,7 @@ int main()
     memset(&client_info, 0, c_addrlen);
     server_info.sin_family = AF_INET;
     server_info.sin_addr.s_addr = inet_addr("127.0.0.1");
-    server_info.sin_port = htons(5001);
+    server_info.sin_port = htons(5000);
 
     // Connect to Server
     int err = connect(sockfd, (struct sockaddr *)&server_info, s_addrlen);

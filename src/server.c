@@ -3,7 +3,7 @@
  *
  */
 #define NUM_CONN 5
-#define PORT 5001
+#define PORT 5000
 
 #include "server.h"
 
@@ -86,6 +86,9 @@ int main(int argc, char *argv[])
               "Error : accept");
         // player_tab[i].status = CONNECTED;
         // Thread creation
+
+        printf("You are Address : %s \t Port : %d \t connected \n", inet_ntoa(player_tab[countThread].addr_d.sin_addr), ntohs(player_tab[countThread].addr_d.sin_port));
+   
         pthread_create(&thread, NULL, routine_thread, (void *)&(player_tab[countThread]));
         countThread++;
     }
@@ -136,7 +139,8 @@ void *routine_thread(void *arg)
     //char password[50];
     int i = 0;
     arg_pl->status = OFFLINE;
-
+    printf(buff, "You are Address : %s \t Port : %d \t connected \n", inet_ntoa(arg_pl->addr_d.sin_addr), ntohs(arg_pl->addr_d.sin_port));
+   
     sprintf(buff, "You are Address : %s \t Port : %d \t connected \n", inet_ntoa(arg_pl->addr_d.sin_addr), ntohs(arg_pl->addr_d.sin_port));
     CHECK(send(arg_pl->sfd, buff, strlen(buff) + 1, 0), "Error : write");
 

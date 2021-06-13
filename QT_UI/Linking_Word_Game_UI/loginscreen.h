@@ -24,6 +24,7 @@ private slots:
     void on_pushButton_clicked();
 
 public slots:
+//    void changeWindow(QMainWindow q1, QMainWindow q2);
 
     void on_lineEdit_user_editingFinished();
 
@@ -31,7 +32,6 @@ public slots:
 
 private:
     Ui::LoginScreen *ui;
-    HomeScreen *homeScreen;
-    LoginScreen *loginScreen;
+    HomeScreen homeScreen;
 };
 #endif // LOGINSCREEN_H

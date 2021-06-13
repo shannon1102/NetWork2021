@@ -5,6 +5,7 @@
 #include <QApplication>
 #include <QProcess>
 extern QString user;
+extern bool clicked;
 
 HomeScreen::HomeScreen(QWidget *parent) :
     QMainWindow(parent),
@@ -27,6 +28,8 @@ void HomeScreen::on_pushButton_clicked()
     room room1;
     room1.setModal(true);
     room1.exec();
+    if (clicked) this->hide();
+    clicked = 0;
 }
 
 
@@ -38,6 +41,8 @@ void HomeScreen::on_lineEdit_returnPressed()
         room room1;
         room1.setModal(true);
         room1.exec();
+        if (clicked) this->hide();
+        clicked = 0;
     }
     else
     {
@@ -48,6 +53,8 @@ void HomeScreen::on_lineEdit_returnPressed()
 
 void HomeScreen::on_pushButton_3_clicked()
 {
+//       loginscreen.show();
+    this->hide();
     qApp->quit();
     QProcess::startDetached(qApp->arguments()[0], qApp->arguments());
 }

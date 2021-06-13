@@ -1,6 +1,8 @@
 #include "room.h"
 #include "ui_room.h"
 
+bool clicked;
+
 room::room(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::room)
@@ -15,8 +17,9 @@ room::~room()
 
 void room::on_pushButton_clicked()
 {
-
-    playSreen = new PlayScreen(this);
-    playSreen->show();
+    playScreen = new PlayScreen();
+    playScreen->show();
+    clicked = 1;
+    this->hide();
 }
 

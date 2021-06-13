@@ -2,7 +2,7 @@
 #define ROOM_H
 
 #include <QDialog>
-#include "playscreen.h"
+#include <playscreen.h>
 
 namespace Ui {
 class room;
@@ -21,7 +21,7 @@ private slots:
 
 private:
     Ui::room *ui;
-    PlayScreen *playSreen;
+    PlayScreen *playScreen;
 };
 
 #endif // ROOM_H

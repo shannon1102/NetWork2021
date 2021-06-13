@@ -2,6 +2,7 @@
 #define HOMESCREEN_H
 
 #include <QMainWindow>
+//#include "roomp.h"
 
 namespace Ui {
 class HomeScreen;
@@ -25,6 +26,7 @@ private slots:
 
 private:
     Ui::HomeScreen *ui;
+//    RoomP roomp;
 };
 
 #endif // HOMESCREEN_H

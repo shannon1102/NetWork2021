@@ -2,10 +2,11 @@
 #define PLAYSCREEN_H
 
 #include <QMainWindow>
-#include "loginscreen.h"
 #include <QTime>
 #include <QTimer>
 #include <QList>
+
+
 
 namespace Ui {
 class PlayScreen;
@@ -23,7 +24,7 @@ private slots:
     void on_lineEdit_returnPressed();
     void updateCountdown();
 //    QTime countDown(QTime time);
-//    void on_pushButton_clicked();
+    void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
 
@@ -32,6 +33,7 @@ private:
     QTimer *timer;
     QList<QTime> c_clock;
     QList<QString> player;
+//    HomeScreen homeScreen;
 };
 
 #endif // PLAYSCREEN_H

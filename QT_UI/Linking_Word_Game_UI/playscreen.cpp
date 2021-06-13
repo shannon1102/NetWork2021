@@ -5,6 +5,8 @@
 #include <QList>
 #include <QColor>
 #include <QMessageBox>
+#include "homescreen.h"
+
 extern QString user;
 extern QString passwd;
 int turn;
@@ -23,7 +25,6 @@ PlayScreen::PlayScreen(QWidget *parent) :
         player.append("a");
         player[i] = QString("Player #%1  ").arg(i);
         c_clock.append(maxTime);
-        c_clock[0].setHMS(0,0,15);
     }
     ui->player_1->setText(player[0]);
     ui->player_2->setText(player[1]);
@@ -67,7 +68,7 @@ void PlayScreen::updateCountdown()
 
     if (c_clock[turn] == minTime)
     {
-        QMessageBox::warning(this,"Time Out", "M thua roi thang lol");
+        QMessageBox::warning(this,"Time Out", "You loss the game");
 
     }
 //    ui->time_1->setText(c_clock[0].toString("m:ss"));
@@ -77,10 +78,13 @@ void PlayScreen::updateCountdown()
 }
 
 
-//void PlayScreen::on_pushButton_clicked()
-//{
-//    timer->stop();
-//}
+void PlayScreen::on_pushButton_clicked()
+{
+    HomeScreen *homescreen = new HomeScreen();
+    homescreen->show();
+//    homeScreen.show();
+    this->hide();
+}
 
 
 void PlayScreen::on_pushButton_2_clicked()

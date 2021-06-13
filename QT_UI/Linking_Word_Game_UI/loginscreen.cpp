@@ -20,10 +20,8 @@ LoginScreen::~LoginScreen()
 
 void LoginScreen::on_pushButton_clicked()
 {
-//    loginScreen = new LoginScreen(this);
-//    loginScreen->hide();
-    homeScreen = new HomeScreen(this);
-    homeScreen->show();
+    homeScreen.show();
+    this->hide();
 }
 
 void LoginScreen::on_lineEdit_user_editingFinished()
@@ -37,4 +35,10 @@ void LoginScreen::on_lineEdit_pass_editingFinished()
 {
     passwd = ui->lineEdit_pass->text();
 }
+
+//extern void LoginScreen::changeWindow(QMainWindow q1, QMainWindow q2)
+//{
+//    q1.hide();
+//    q2.show();
+//}
 

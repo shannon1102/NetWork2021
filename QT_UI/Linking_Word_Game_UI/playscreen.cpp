@@ -7,8 +7,8 @@
 #include <QMessageBox>
 #include "homescreen.h"
 
-extern QString user;
-extern QString passwd;
+extern QString name;
+extern QString pass;
 int turn;
 QString text;
 QTime maxTime(0,5,0);
@@ -36,8 +36,8 @@ PlayScreen::PlayScreen(QWidget *parent) :
     ui->time_4->setText(c_clock[3].toString("m:ss"));
     timer = new QTimer();
     connect(timer, SIGNAL(timeout()), this, SLOT(updateCountdown()));
-    text.append(user);
-    text.append("dfsadfadsfaudfauisdf");
+    text.append(name);
+//    text.append("dfsadfadsfaudfauisdf");
 
     ui->label_3->setText(text);
 

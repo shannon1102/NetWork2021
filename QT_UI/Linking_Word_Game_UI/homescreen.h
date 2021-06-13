@@ -2,7 +2,6 @@
 #define HOMESCREEN_H
 
 #include <QMainWindow>
-//#include "roomp.h"
 
 namespace Ui {
 class HomeScreen;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.15.0, 2021-06-13T14:48:37. -->
+<!-- Written by QtCreator 4.15.0, 2021-06-13T14:51:58. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -294,8 +294,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/Qt/Workspace/Linking_Word_Game_UI/Linking_Word_Game_UI.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/Qt/Workspace/Linking_Word_Game_UI/Linking_Word_Game_UI.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Linking_Word_Game_UI2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/ha.pt176744/Documents/GitHub/NetWork2021/QT_UI/Linking_Word_Game_UI/Linking_Word_Game_UI.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/ha.pt176744/Documents/GitHub/NetWork2021/QT_UI/Linking_Word_Game_UI/Linking_Word_Game_UI.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>

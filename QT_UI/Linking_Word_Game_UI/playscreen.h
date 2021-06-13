@@ -2,6 +2,10 @@
 #define PLAYSCREEN_H
 
 #include <QMainWindow>
+#include "loginscreen.h"
+#include <QTime>
+#include <QTimer>
+#include <QList>
 
 namespace Ui {
 class PlayScreen;
@@ -15,8 +19,19 @@ public:
     explicit PlayScreen(QWidget *parent = nullptr);
     ~PlayScreen();
 
+private slots:
+    void on_lineEdit_returnPressed();
+    void updateCountdown();
+//    QTime countDown(QTime time);
+//    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::PlayScreen *ui;
+    QTimer *timer;
+    QList<QTime> c_clock;
+    QList<QString> player;
 };
 
 #endif // PLAYSCREEN_H

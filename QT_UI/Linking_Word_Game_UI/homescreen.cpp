@@ -4,18 +4,21 @@
 #include "QMessageBox"
 #include <QApplication>
 #include <QProcess>
+extern QString user;
 
 HomeScreen::HomeScreen(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::HomeScreen)
 {
     ui->setupUi(this);
+    ui->lineEdit->setText(user);
 }
 
 HomeScreen::~HomeScreen()
 {
     delete ui;
 }
+
 
 
 

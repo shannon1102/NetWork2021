@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <homescreen.h>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class LoginScreen; }
@@ -15,9 +16,18 @@ class LoginScreen : public QMainWindow
 public:
     LoginScreen(QWidget *parent = nullptr);
     ~LoginScreen();
+//public:
+//    static QString user;
+//    static QString passwd;
 
 private slots:
     void on_pushButton_clicked();
+
+public slots:
+
+    void on_lineEdit_user_editingFinished();
+
+    void on_lineEdit_pass_editingFinished();
 
 private:
     Ui::LoginScreen *ui;

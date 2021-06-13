@@ -85,30 +85,88 @@
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
-            <widget class="QListWidget" name="listWidget">
+            <layout class="QFormLayout" name="formLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="player_1">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="time_1">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="player_2">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="time_2">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="player_3">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="time_3">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="player_4">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="time_4">
+               <property name="text">
+                <string>TextLabel</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
              <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
-             <property name="minimumSize">
-              <size>
-               <width>100</width>
-               <height>100</height>
-              </size>
-             </property>
              <property name="styleSheet">
               <string notr="true">font-family: Roboto;
 font-style: normal;
-font-weight: normal;
+font-weight: 900;
 font-size: 30px;
-line-height: 56px;
+line-height: 42px;
+font-allign: center;
 
-color: #000000;</string>
+color: #FF0000;</string>
              </property>
-             <property name="editTriggers">
-              <set>QAbstractItemView::NoEditTriggers</set>
+             <property name="text">
+              <string>Room ID</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -147,24 +205,67 @@ color: #FF0000;</string>
           </layout>
          </item>
          <item>
-          <widget class="QPlainTextEdit" name="plainTextEdit">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font-family: Roboto;
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-family: Roboto;
 font-style: normal;
-font-weight: 200;
-font-size: 30px;
+font-weight: 900;
+font-size: 50px;
 line-height: 56px;
 padding-left: 50px;
 
+color: #ff0835;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 56px;
+padding-left: 40px;
+
 color: #000000;</string>
-           </property>
-          </widget>
+             </property>
+             <property name="placeholderText">
+              <string>Input word here</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
         </layout>
        </widget>
